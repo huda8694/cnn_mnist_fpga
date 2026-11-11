@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Nov  9 09:03:29 2026
+# Process ID         : 10752
+# Current directory  : C:/vv_mnist/mnist_cnn.runs/synth_1
+# Command line       : vivado.exe -log mnist_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mnist_top.tcl
+# Log file           : C:/vv_mnist/mnist_cnn.runs/synth_1/mnist_top.vds
+# Journal file       : C:/vv_mnist/mnist_cnn.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-45HUB9VC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 25463 MB
+# Swap memory        : 4058 MB
+# Total Virtual      : 29522 MB
+# Available Virtual  : 2116 MB
+#-----------------------------------------------------------
+source mnist_top.tcl -notrace

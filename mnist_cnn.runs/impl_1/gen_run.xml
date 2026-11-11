@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1794195207">
+  <File Type="PA-TCL" Name="mnist_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="mnist_top_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="mnist_top_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="mnist_top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="mnist_top_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="mnist_top_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="mnist_top_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="mnist_top_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mnist_top.hwdef"/>
+  <File Type="OPT-TIMING" Name="mnist_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="mnist_top_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="mnist_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="mnist_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="mnist_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="mnist_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="mnist_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="mnist_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mnist_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mnist_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mnist_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="mnist_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mnist_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="mnist_top_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="mnist_top_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mnist_top_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="mnist_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="mnist_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="mnist_top_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="mnist_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mnist_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="mnist_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mnist_top_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="mnist_top_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="mnist_top_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="mnist_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mnist_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="mnist_top_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mnist_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mnist_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mnist_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="mnist_top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="mnist_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mnist_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mnist_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mnist_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mnist_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mnist_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mnist_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mnist_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="mnist_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="mnist_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mnist_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mnist_top_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="mnist_top_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mnist_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mnist_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mnist_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mnist_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mnist_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mnist_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="mnist_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="mnist_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="mnist_top.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="mnist_top.ncr"/>
+  <File Type="BG-BIT" Name="mnist_top.bit"/>
+  <File Type="BG-BIN" Name="mnist_top.bin"/>
+  <File Type="BITSTR-MSK" Name="mnist_top.msk"/>
+  <File Type="BITSTR-RBT" Name="mnist_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="mnist_top.nky"/>
+  <File Type="BITSTR-BMM" Name="mnist_top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="mnist_top.mmi"/>
+  <File Type="PDI-FILE" Name="mnist_top.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="mnist_top_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="mnist_top_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="mnist_top.rcfi"/>
+  <File Type="CFI_FILE" Name="mnist_top.cfi"/>
+  <File Type="RNPI_FILE" Name="mnist_top.rnpi"/>
+  <File Type="RCDO-FILE" Name="mnist_top.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="mnist_top_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="mnist_top_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="mnist_top_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="mnist_top_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="mnist_top_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="mnist_top_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="mnist_top_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="mnist_top_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="mnist_top_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="mnist_top_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="mnist_top_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="mnist_top_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="mnist_top_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="mnist_top_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="mnist_top_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="mnist_top.npi"/>
+  <File Type="RBD_FILE" Name="mnist_top.rbd"/>
+  <File Type="MMI-FILE" Name="mnist_top.mmi"/>
+  <File Type="BIF-FILE" Name="mnist_top.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="mnist_top_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="mnist_top_pld.bif"/>
+  <File Type="LTX-FILE" Name="mnist_top.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="mnist_top_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="mnist_top_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mnist_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="mnist_top.sysdef"/>
+  <File Type="BG-BGN" Name="mnist_top.bgn"/>
+  <File Type="BG-DRC" Name="mnist_top.drc"/>
+  <File Type="RDI-RDI" Name="mnist_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="mnist_top_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="mnist_top_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_d.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_img.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_w.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/cnn_conv.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/cnn_dense.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/debounce.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_cnn_core.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_conv_params.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_dense_params.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_sparse_rom.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_test_rom.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/seg7_driver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/uart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/uart_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mnist_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/constraints/nexys_a7_100t.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/mnist_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

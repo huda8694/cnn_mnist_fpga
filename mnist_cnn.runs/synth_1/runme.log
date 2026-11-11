@@ -1,0 +1,557 @@
+
+*** Running vivado
+    with args -log mnist_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mnist_top.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Nov  9 09:03:29 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mnist_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 527.031 ; gain = 217.844
+Command: read_checkpoint -auto_incremental -incremental C:/vv_mnist/mnist_cnn.srcs/utils_1/imports/synth_1/mnist_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/vv_mnist/mnist_cnn.srcs/utils_1/imports/synth_1/mnist_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mnist_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25212
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1278.328 ; gain = 542.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mnist_top' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/debounce.v:7]
+	Parameter STABLE_CYCLES bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/debounce.v:7]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/uart_rx.v:7]
+	Parameter CLKS_PER_BIT bound to: 868 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/uart_rx.v:7]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/uart_tx.v:7]
+	Parameter CLKS_PER_BIT bound to: 868 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/uart_tx.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mnist_test_rom' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_test_rom.v:8]
+	Parameter IMG_FILE bound to: mnist_img.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'mnist_img.mem' is read successfully [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_test_rom.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mnist_test_rom' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_test_rom.v:8]
+INFO: [Synth 8-6157] synthesizing module 'mnist_cnn_core' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_cnn_core.v:16]
+	Parameter W_FILE bound to: mnist_w.mem - type: string 
+	Parameter D_FILE bound to: mnist_d.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'cnn_conv' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/cnn_conv.v:30]
+INFO: [Synth 8-6157] synthesizing module 'mnist_conv_params' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_conv_params.v:9]
+INFO: [Synth 8-226] default block is never used [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_conv_params.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'mnist_conv_params' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_conv_params.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_conv' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/cnn_conv.v:30]
+INFO: [Synth 8-6157] synthesizing module 'cnn_dense' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/cnn_dense.v:35]
+	Parameter W_FILE bound to: mnist_w.mem - type: string 
+	Parameter D_FILE bound to: mnist_d.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mnist_dense_params' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_dense_params.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mnist_dense_params' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_dense_params.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mnist_sparse_rom' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_sparse_rom.v:8]
+	Parameter W_FILE bound to: mnist_w.mem - type: string 
+	Parameter D_FILE bound to: mnist_d.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'mnist_w.mem' is read successfully [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_sparse_rom.v:21]
+INFO: [Synth 8-3876] $readmem data file 'mnist_d.mem' is read successfully [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_sparse_rom.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mnist_sparse_rom' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_sparse_rom.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_dense' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/cnn_dense.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'mnist_cnn_core' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_cnn_core.v:16]
+INFO: [Synth 8-226] default block is never used [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_top.v:182]
+INFO: [Synth 8-6157] synthesizing module 'seg7_driver' [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/seg7_driver.v:10]
+	Parameter REFRESH_BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'seg7_driver' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/seg7_driver.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mnist_top' (0#1) [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/mnist_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1696.332 ; gain = 960.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1696.332 ; gain = 960.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1696.332 ; gain = 960.387
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1696.332 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/constraints/nexys_a7_100t.xdc]
+Finished Parsing XDC File [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/constraints/nexys_a7_100t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/constraints/nexys_a7_100t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mnist_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mnist_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1757.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1757.703 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1757.703 ; gain = 1021.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1757.703 ; gain = 1021.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1757.703 ; gain = 1021.758
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cnn_conv'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cnn_dense'
+INFO: [Synth 8-802] inferred FSM for state register 'kst_reg' in module 'mnist_cnn_core'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'mnist_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                               00
+                ST_START |                               01 |                               01
+                 ST_DATA |                               10 |                               10
+                 ST_STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  C_IDLE |                              000 |                              000
+                  C_LOAD |                              001 |                              001
+                  C_COMP |                              010 |                              010
+                 C_DRAIN |                              011 |                              011
+                  C_NEXT |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cnn_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  D_INIT |                             0000 |                             0000
+                  D_SCAN |                             0001 |                             0001
+                  D_WAIT |                             0010 |                             0101
+                  D_FIN1 |                             0011 |                             0110
+                  D_FIN2 |                             0100 |                             0111
+                  D_FIN3 |                             0101 |                             1000
+                  D_FIN4 |                             0110 |                             1001
+                  D_NEXT |                             0111 |                             1010
+                  D_DONE |                             1000 |                             1011
+                  D_IDLE |                             1001 |                             0010
+                  D_LOAD |                             1010 |                             0011
+                 D_ISSUE |                             1011 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cnn_dense'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  K_IDLE |                              001 |                               00
+                  K_CONV |                              010 |                               01
+                 K_DENSE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'kst_reg' using encoding 'one-hot' in module 'mnist_cnn_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  T_BOOT |                              000 |                              000
+                  T_IDLE |                              001 |                              001
+                T_UARTLD |                              010 |                              100
+                 T_ROMLD |                              011 |                              010
+               T_ROMWAIT |                              100 |                              011
+                   T_RUN |                              101 |                              101
+                 T_REPLY |                              110 |                              110
+                   T_ERR |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'mnist_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1757.703 ; gain = 1021.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 1     
+	   4 Input   23 Bit       Adders := 1     
+	   3 Input   19 Bit       Adders := 3     
+	   2 Input   18 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 5     
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               72 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               28 Bit    Registers := 12    
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               22 Bit    Registers := 2     
+	               19 Bit    Registers := 3     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 5     
+	               10 Bit    Registers := 8     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 22    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 53    
++---RAMs : 
+	              43K Bit	(5536 X 8 bit)          RAMs := 1     
+	               6K Bit	(784 X 8 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 3     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	  12 Input   18 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   5 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 3     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 5     
+	   5 Input   10 Bit        Muxes := 3     
+	   8 Input   10 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 10    
+	  12 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 5     
+	   5 Input    7 Bit        Muxes := 1     
+	   8 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 5     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   5 Input    4 Bit        Muxes := 3     
+	  12 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 6     
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 55    
+	   4 Input    1 Bit        Muxes := 6     
+	   5 Input    1 Bit        Muxes := 12    
+	  12 Input    1 Bit        Muxes := 24    
+	   3 Input    1 Bit        Muxes := 4     
+	   8 Input    1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'wk_r_reg' and it is trimmed from '72' to '8' bits. [C:/Users/Admin/Downloads/nexys_a7_mnist_cnn/nexys_a7_mnist_cnn/rtl/cnn_conv.v:104]
+DSP Report: Generating DSP shr0, operation Mode is: C+(A2*B2)'.
+DSP Report: register m_r_reg is absorbed into DSP shr0.
+DSP Report: register mx_reg is absorbed into DSP shr0.
+DSP Report: register rq_reg is absorbed into DSP shr0.
+DSP Report: operator rq0 is absorbed into DSP shr0.
+DSP Report: operator shr0 is absorbed into DSP shr0.
+WARNING: [Synth 8-6040] Register u_dense/row_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register u_dense/row_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+DSP Report: Generating DSP u_dense/q0, operation Mode is: C+(A2*(B:0x93e5))'.
+DSP Report: register u_dense/relu_c_reg is absorbed into DSP u_dense/q0.
+DSP Report: register u_dense/rqp_reg is absorbed into DSP u_dense/q0.
+DSP Report: operator u_dense/rqp0 is absorbed into DSP u_dense/q0.
+DSP Report: operator u_dense/q0 is absorbed into DSP u_dense/q0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1871.617 ; gain = 1135.672
+---------------------------------------------------------------------------------
+ Sort Area is  shr0_0 : 0 0 : 2717 2717 : Used 1 time 0
+ Sort Area is  u_dense/q0_2 : 0 0 : 1544 1544 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------+-----------------------+---------------+----------------+
+|Module Name        | RTL Object            | Depth x Width | Implemented As | 
++-------------------+-----------------------+---------------+----------------+
+|mnist_test_rom     | lbl_mem               | 64x4          | LUT            | 
+|mnist_conv_params  | bias                  | 32x14         | LUT            | 
+|mnist_conv_params  | mult                  | 32x16         | LUT            | 
+|mnist_dense_params | row_len               | 256x11        | LUT            | 
+|mnist_dense_params | row_bias              | 256x13        | LUT            | 
+|mnist_sparse_rom   | w_reg                 | 262144x8      | Block RAM      | 
+|mnist_conv_params  | bias                  | 32x14         | LUT            | 
+|mnist_cnn_core     | u_dense/u_dp/row_len  | 256x11        | LUT            | 
+|mnist_cnn_core     | u_dense/u_dp/row_bias | 256x13        | LUT            | 
+|mnist_top          | u_test_rom/pixel_reg  | 65536x8       | Block RAM      | 
+|mnist_top          | p_0_out               | 64x4          | LUT            | 
++-------------------+-----------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\u_core/u_conv  | img_mem_reg       | 784 x 8(READ_FIRST)    | W |   | 784 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|mnist_top       | u_core/fm_mem_reg | 5 K x 8(READ_FIRST)    | W |   | 5 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++----------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cnn_conv    | C+(A2*B2)'         | 22     | 16     | 38     | -      | 38     | 1    | 1    | 0    | -    | -     | 1    | 0    | 
+|cnn_dense   | C+(A2*(B:0x93e5))' | 24     | 16     | 40     | -      | 40     | 1    | 0    | 0    | -    | -     | 1    | 0    | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2077.820 ; gain = 1341.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2168.379 ; gain = 1432.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\u_core/u_conv  | img_mem_reg       | 784 x 8(READ_FIRST)    | W |   | 784 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|mnist_top       | u_core/fm_mem_reg | 5 K x 8(READ_FIRST)    | W |   | 5 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++----------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_core/u_conv/img_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_2_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_2_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_2_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_2_3__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_2_4__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_2_5__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_2_6__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/w_reg_2_7__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_2_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_2_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_2_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_core/u_dense/u_rom/d_reg_2_3__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_test_rom/pixel_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_test_rom/pixel_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_test_rom/pixel_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_test_rom/pixel_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_test_rom/pixel_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_test_rom/pixel_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_test_rom/pixel_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_test_rom/pixel_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2178.461 ; gain = 1442.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2192.164 ; gain = 1456.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2192.164 ; gain = 1456.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2192.164 ; gain = 1456.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2192.164 ; gain = 1456.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2193.160 ; gain = 1457.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2193.160 ; gain = 1457.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mnist_top   | u_core/u_conv/p4_reg[1]  | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|mnist_top   | u_core/u_conv/v4_reg     | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|mnist_top   | u_core/u_conv/fm_we_reg  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|mnist_top   | u_core/u_dense/l7_reg    | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|mnist_top   | u_core/u_dense/v6_reg    | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|mnist_top   | u_core/u_dense/w5_reg[7] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cnn_conv    | (C+A'*B')'  | 21     | 16     | 23     | -      | 38     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|cnn_dense   | (C+A'*B)'   | 24     | 16     | 26     | -      | 40     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   228|
+|3     |DSP48E1  |     2|
+|5     |LUT1     |    33|
+|6     |LUT2     |   362|
+|7     |LUT3     |   243|
+|8     |LUT4     |   521|
+|9     |LUT5     |   401|
+|10    |LUT6     |   648|
+|11    |MUXF7    |     6|
+|12    |RAMB18E1 |     1|
+|13    |RAMB36E1 |    78|
+|90    |SRL16E   |    14|
+|91    |FDPE     |     3|
+|92    |FDRE     |  1560|
+|93    |FDSE     |    30|
+|94    |IBUF     |    10|
+|95    |OBUF     |    33|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2193.160 ; gain = 1457.215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 2193.160 ; gain = 1395.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2193.160 ; gain = 1457.215
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2202.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 315 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2205.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d2b01fa1
+INFO: [Common 17-83] Releasing license: Synthesis
+105 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:09 . Memory (MB): peak = 2205.988 ; gain = 1673.434
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2205.988 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/vv_mnist/mnist_cnn.runs/synth_1/mnist_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mnist_top_utilization_synth.rpt -pb mnist_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  9 09:04:55 2026...

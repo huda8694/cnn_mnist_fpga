@@ -1,0 +1,11 @@
+# Vivado build files and logs
+output/
+*.log
+*.jou
+*.pb
+*.wdb
+.Xil/
+
+# Python caches
+__pycache__/
+*.pyc

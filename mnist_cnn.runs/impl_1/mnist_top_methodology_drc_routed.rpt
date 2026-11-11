@@ -1,0 +1,906 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Mon Nov  9 09:06:13 2026
+| Host         : LAPTOP-45HUB9VC running 64-bit major release  (build 9200)
+| Command      : report_methodology -file mnist_top_methodology_drc_routed.rpt -pb mnist_top_methodology_drc_routed.pb -rpx mnist_top_methodology_drc_routed.rpx
+| Design       : mnist_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 174
++---------+----------+--------------------------------------------+--------+
+| Rule    | Severity | Description                                | Checks |
++---------+----------+--------------------------------------------+--------+
+| SYNTH-6 | Warning  | Timing of a RAM block might be sub-optimal | 45     |
+| SYNTH-9 | Warning  | Small multiplier                           | 129    |
++---------+----------+--------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_conv/img_mem_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_1_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_1_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_1_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_1_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_2_0__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_2_1__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_2_2__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_2_3__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_3_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_3_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_3_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/d_reg_3_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_1_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_1_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_1_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_1_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_1_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_1_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_1_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_1_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_2_0__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_2_1__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_2_2__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_2_3__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_2_4__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_2_5__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_2_6__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_2_7__0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_3_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_3_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_3_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#33 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_3_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#34 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_3_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#35 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_3_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#36 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_3_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#37 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_core/u_dense/u_rom/w_reg_3_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#38 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_test_rom/pixel_reg_1_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#39 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_test_rom/pixel_reg_1_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#40 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_test_rom/pixel_reg_1_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#41 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_test_rom/pixel_reg_1_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#42 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_test_rom/pixel_reg_1_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#43 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_test_rom/pixel_reg_1_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#44 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_test_rom/pixel_reg_1_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#45 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_test_rom/pixel_reg_1_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#3 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#4 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][11]_i_12 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#5 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#6 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#7 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][15]_i_9 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#8 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#9 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#10 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#11 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#12 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#13 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[0].prod_reg[0][7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#14 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#15 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#16 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#17 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][11]_i_12 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#18 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#19 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#20 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][15]_i_9 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#21 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#22 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#23 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#24 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#25 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#26 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[1].prod_reg[1][7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#27 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#28 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#29 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#30 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][11]_i_12 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#31 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#32 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#33 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][15]_i_9 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#34 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#35 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#36 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#37 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#38 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#39 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[2].prod_reg[2][7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#40 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#41 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#42 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#43 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][11]_i_12 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#44 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#45 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#46 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][15]_i_9 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#47 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#48 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#49 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#50 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#51 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#52 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[3].prod_reg[3][7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#53 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#54 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#55 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#56 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][11]_i_12 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#57 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#58 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#59 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][15]_i_9 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#60 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#61 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#62 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#63 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#64 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#65 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[4].prod_reg[4][7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#66 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#67 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#68 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#69 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#70 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#71 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][15]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#72 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#73 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#74 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#75 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#76 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#77 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[5].prod_reg[5][7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#78 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#79 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#80 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#81 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][11]_i_12 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#82 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#83 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#84 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][15]_i_9 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#85 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#86 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#87 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#88 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#89 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#90 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[6].prod_reg[6][7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#91 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#92 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#93 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#94 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][11]_i_12 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#95 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#96 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#97 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][15]_i_9 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#98 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#99 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#100 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#101 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#102 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#103 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[7].prod_reg[7][7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#104 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#105 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#106 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#107 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][11]_i_12 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#108 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#109 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#110 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][15]_i_9 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#111 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#112 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#113 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#114 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#115 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#116 Warning
+Small multiplier  
+Detected multiplier at u_core/u_conv/g_mul[8].prod_reg[8][7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#117 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[11]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#118 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[11]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#119 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[11]_i_11 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#120 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[11]_i_12 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#121 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[15]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#122 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[15]_i_10 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#123 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[15]_i_9 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#124 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[16]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#125 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[16]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#126 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[16]_i_3 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#127 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[2]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#128 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[3]_i_2 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#129 Warning
+Small multiplier  
+Detected multiplier at u_core/u_dense/prod_reg[7]_i_1 of size 9x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+
